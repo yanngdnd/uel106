@@ -1,189 +1,243 @@
 :root {
-    --primary-color: #79b7c2;
-    --primary-color-dark: #80d5e4;
-    --secondary-color: #79b7c2;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --extra-light: #faf5ff;
-    --max-width: 1200px;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    z-index: 99;
-  }
-  
-  .nav__content {
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 1.5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    transition: 0.3s;
-  }
-  
-  nav .logo a:hover {
-    color: var(--primary-color-dark);
-  }
-  
-  nav .checkbox {
-    display: none;
-  }
-  
-  nav input {
-    display: none;
-  }
-  
-  nav .checkbox i {
-    font-size: 2rem;
-    color: var(--primary-color);
-    cursor: pointer;
-  }
-  
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    list-style: none;
-    transition: left 0.3s;
-  }
-  
-  ul li a {
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--primary-color);
-    transition: 0.3s;
-  }
-  
-  ul li a:hover {
-    border-top-color: var(--secondary-color);
-    border-bottom-color: var(--secondary-color);
-    color: var(--secondary-color);
-  }
-  
-  .section {
-    background-color: var(--extra-light);
-  }
-  
-  .container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  --primary-color: #79b7c2;
+  --primary-color-dark: #80d5e4;
+  --secondary-color: #79b7c2;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container form {
+  width: 670px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.container form h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 2;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.container form input {
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--text-dark);
+}
+
+.container form input::placeholder {
+  color: var(--primary-color);
+}
+
+.container form #lastName,
+.container form #mobile {
+  margin-left: 20px;
+}
+
+.container form h4 {
+  color: var(--primary-color);
+  font-weight: 300;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.container form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--text-dark);
+  font-weight: 200;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+  min-height: 90px;
+  max-height: 90px;
+  min-width: 300px;
+  max-width: 620px;
+}
+
+.container form #button {
+  border: none;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.container form #button:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
   .container form {
-    width: 670px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    border : 2px solid var(--primary-color);
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
-    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 20px;
   }
-  
+
   .container form h1 {
-    color: var(--primary-color);
-    font-weight: 700;
-    line-height: 2;
-    margin-top: 20px;
-    width: 500px;
-    text-align: center;
+    font-size: 1.8rem;
   }
-  
-  .container form input {
-    width: 300px;
-    height: 50px;
-    padding-left: 10px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    margin-bottom: 10px;
-    background: none;
-    border-bottom: 2px solid var(--primary-color);
-    color: var(--text-dark);
-  }
-  
-  .container form input::placeholder {
-    color: var(--primary-color);
-  }
-  
-  .container form #lastName,
-  .container form #mobile {
-    margin-left: 20px;
-  }
-  
-  .container form h4 {
-    color: var(--primary-color);
-    font-weight: 300;
-    width: 600px;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  
+
+  .container form input,
   .container form textarea {
-    background: none;
-    border: none;
-    border-bottom: 2px solid var(--primary-color);
-    color: var(--text-dark);
-    font-weight: 200;
-    font-size: 20px;
-    padding: 10px;
-    outline: none;
-    min-height: 90px;
-    max-height: 90px;
-    min-width: 620px;
-    max-width: 620px;
+    width: 100%;
+    font-size: 18px;
   }
-  
+
+  .container form h4 {
+    font-size: 18px;
+    width: 100%;
+  }
+
   .container form #button {
-    border: none;
-    background: var(--secondary-color);
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 24px;
-    color: #ffffff;
-    width: 200px;
-    height: 60px;
-    padding: 0;
-    margin-bottom: 30px;
-    transition: 0.3s;
+    width: 100%;
   }
-  
-  .container form #button:hover {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  .container form {
+    padding: 10px;
   }
-  
+
+  .container form h1 {
+    font-size: 1.6rem;
+  }
+
+  .container form input,
+  .container form textarea {
+    font-size: 16px;
+  }
+
+  .container form h4 {
+    font-size: 16px;
+  }
+
+  .container form #button {
+    font-size: 20px;
+    height: 50px;
+  }
+}
