@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo">Mon Portfolio</div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" id="check" />
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="contact.html">Me contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form>
+        <h1>Me contacter</h1>
+        <input type="text" id="firstName" placeholder="Prénom" required />
+        <input type="text" id="lastName" placeholder="Nom" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="mobile" placeholder="Mobile" required />
+        <h4>Ecrivez votre message ici...</h4>
+        <textarea required></textarea>
+        <input type="submit" value="Envoyer" id="button" />
+      </form>
+    </div>
+  </body>
+</html>
