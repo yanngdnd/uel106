@@ -59,6 +59,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -170,7 +171,7 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-@media (width < 750px) {
+@media (max-width: 750px) {
   nav .checkbox {
     display: block;
   }
@@ -204,3 +205,23 @@ ul li a:hover {
   .image {
     grid-area: 1/1/2/2;
   }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cv {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
